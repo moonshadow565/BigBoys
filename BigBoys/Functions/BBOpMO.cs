@@ -1,0 +1,16 @@
+﻿using System;
+using BigBoys.Context;
+using BigBoys.Execution;
+using BigBoys.Lua;
+using BigBoys.Enums;
+using BigBoys.Helpers;
+
+namespace BigBoys.Functions
+{
+    public abstract partial class BBOpMO
+    {
+        private BBOpMO() {}
+        
+        public abstract float Call(IContext c, float a, float? b);
+    }
+}
